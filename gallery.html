@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crochet Cove | Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo">🧶 Crochet Cove</a>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="cart-button" data-cart-open>Cart (<span data-cart-count>0</span>)</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Gallery</h1>
+      <p>A look at our favorite creations and custom projects.</p>
+    </section>
+
+    <section class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="images/benie.jpg" alt="Pastel granny square throw" />
+        <figcaption>
+          <strong>Pastel Throw:</strong> A cozy blend of soft tones for gentle vibes.
+        </figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/hanger.jpg" alt="Crochet plant hangers" />
+        <figcaption>
+          <strong>Plant Hangers:</strong> Minimal boho decor to elevate your greens.
+        </figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/scarf.jpg" alt="Colorblock scarf" />
+        <figcaption>
+          <strong>Colorblock Scarf:</strong> Bold, warm, and playful.
+        </figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/bunny.jpg" alt="Amigurumi set" />
+        <figcaption>
+          <strong>Amigurumi Set:</strong> Cute companions for your desk or shelf.
+        </figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/blanket.jpg" alt="Textured blanket" />
+        <figcaption>
+          <strong>Textured Blanket:</strong> Weighty comfort, timeless stitch patterns.
+        </figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/tote_bags.jpg" alt="Crochet tote bag" />
+        <figcaption>
+          <strong>Tote Bag:</strong> Everyday utility with handcrafted charm.
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>About</h4>
+        <p>We create cozy, handcrafted crochet items with love and care from our studio.</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Pinterest">Pinterest</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email:crochetcove@gmail.com</p>
+      </div>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> Crochet Cove. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button class="close" data-cart-close aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <strong>Total:</strong> <span data-cart-total>₹0</span>
+      </div>
+      <button class="btn" data-checkout>Checkout</button>
+    </div>
+  </aside>
+
+  <div class="backdrop" data-backdrop></div>
+</body>
+</html>
