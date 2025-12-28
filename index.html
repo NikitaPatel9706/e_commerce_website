@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crochet Cove | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo">🧶 Crochet Cove</a>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="cart-button" data-cart-open>Cart (<span data-cart-count>0</span>)</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Handmade crochet that feels like home</h1>
+        <p>Discover cozy, handcrafted pieces made with care—scarves, amigurumi, blankets, and more.</p>
+        <div class="hero-actions">
+          <a class="btn" href="shop.html">Shop now</a>
+          <a class="btn btn-outline" href="gallery.html">Explore gallery</a>
+        </div>
+      </div>
+      <img class="hero-image" src="images/hero.jpg" alt="Crochet hero image" />
+    </section>
+
+    <section class="featured">
+      <h2>Featured creations</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/scarf.jpg" alt="Chunky scarf" />
+          <div class="card-body">
+            <h3>Chunky Warm Scarf</h3>
+            <p>Soft wool scarf with a plush texture for winter comfort.</p>
+            <a class="btn btn-small" href="shop.html#scarf">View in shop</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/bunny.jpg" alt="Amigurumi bunny" />
+          <div class="card-body">
+            <h3>Amigurumi Bunny</h3>
+            <p>Adorable hand-stitched bunny—perfect for gifting.</p>
+            <a class="btn btn-small" href="shop.html#bunny">View in shop</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/blanket.jpg" alt="Granny square blanket" />
+          <div class="card-body">
+            <h3>Granny Square Blanket</h3>
+            <p>Colorful, cozy throw to brighten any space.</p>
+            <a class="btn btn-small" href="shop.html#blanket">View in shop</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Why Crochet Cove?</h2>
+      <ul class="icon-list">
+        <li>
+          <span class="icon">✨</span>
+          <div>
+            <strong>Quality:</strong> Each piece is crafted with premium yarn and attention to detail.
+          </div>
+        </li>
+        <li>
+          <span class="icon">🌿</span>
+          <div>
+            <strong>Ethical:</strong> Handmade, small-batch, and sustainably minded.
+          </div>
+        </li>
+        <li>
+          <span class="icon">🎁</span>
+          <div>
+            <strong>Personalized:</strong> Custom colors and sizes on request.
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>About</h4>
+        <p>We create cozy, handcrafted crochet items with love and care from our studio.</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram </a></li>
+          <li><a href="#" aria-label="Pinterest">Pinterest</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email:crochetcove@gmail</p>
+      </div>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> Crochet Cove. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button class="close" data-cart-close aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <strong>Total:</strong> <span data-cart-total>₹0</span>
+      </div>
+      <button class="btn" data-checkout>Checkout</button>
+    </div>
+  </aside>
+
+  <div class="backdrop" data-backdrop></div>
+</body>
+</html>
